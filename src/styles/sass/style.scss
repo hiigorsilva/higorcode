@@ -233,28 +233,31 @@
 .situation {
   padding-block: 5rem;
   background: $primaryMedium;
-  & .areas {
-    display: flex;
-    justify-content: space-between;
-    gap: 2rem;
-    & .leftside {
+  & .content {
+    padding-inline: 1.25rem;
+    & .areas {
       display: flex;
-      flex: 1;
-      align-items: center;
-      & > img {
-        max-width: 550px;
+      justify-content: space-between;
+      gap: 2rem;
+      & .leftside {
+        display: flex;
+        flex: 1;
+        align-items: center;
+        & > img {
+          max-width: 550px;
+        }
       }
-    }
-    & .rightside {
-      display: flex;
-      flex: 1;
-      flex-direction: column;
-      gap: 1.5rem;
-      & p {
-        font-size: 1rem;
-        font-weight: 400;
-        color: $secundaryText;
-        max-width: 550px;
+      & .rightside {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        gap: 1.5rem;
+        & p {
+          font-size: 1rem;
+          font-weight: 400;
+          color: $secundaryText;
+          max-width: 550px;
+        }
       }
     }
   }
@@ -262,6 +265,7 @@
 .target {
   background: $primaryMedium;
   padding-block: 2rem;
+  padding-inline: 1.25rem;
   & .content {
     @extend.container;
     position: relative;
@@ -328,6 +332,7 @@
   background: $primaryMedium;
   & .content {
     @extend .container;
+    padding-inline: 1.25rem;
     & .cards {
       display: flex;
       justify-content: space-between;
