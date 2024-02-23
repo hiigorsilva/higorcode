@@ -109,29 +109,6 @@
   }
 }
 @media (max-width: 576px) {
-  .hero {
-    & .content {
-      & .vsl-area {
-        & .cta {
-          gap: 1rem;
-        }
-      }
-    }
-  }
-  .method {
-    & .content {
-      & .stages {
-        gap: 3rem;
-      }
-    }
-  }
-  .cta-bar {
-    & .leftside {
-      display: none;
-    }
-  }
-}
-@media (max-width: 576px) {
   .title {
     text-align: start;
   }
@@ -141,6 +118,24 @@
         & p {
           text-align: start;
         }
+        & .vsl-area {
+          & .cta {
+            gap: 1rem;
+          }
+        }
+      }
+    }
+  }
+  .portfolio {
+    & .content {
+      & .projects {
+        & .item {
+          & .info {
+            & h3 {
+              text-align: start;
+            }
+          }
+        }
       }
     }
   }
@@ -149,6 +144,7 @@
       & .stages {
         flex-direction: column;
         justify-content: center;
+        gap: 3rem;
         & .item {
           max-width: none;
         }
@@ -174,6 +170,9 @@
   }
   .cta-bar {
     min-width: auto;
+    & .leftside {
+      display: none;
+    }
     & .rightside {
       & .cta {
         & > span {
