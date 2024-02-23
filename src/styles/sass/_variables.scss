@@ -1,0 +1,20 @@
+$primaryDefault: #030712;
+$primaryMedium: #070b16;
+$primaryLight: #1f2937;
+$primaryGray: #4b5563;
+$secundaryDefault: #f9fafb;
+$secundaryMedium: #e5e7eb;
+$secundaryGray: #d1d5db;
+$secundaryText: #a0a4aa;
+$accentDefault: #ea580c;
+$accentMedium: #fb923c;
+$accentLight: #fdba74;
+$detailsWhite: rgba(255, 255, 255, 0.25);
+$detailsBlack: rgba(0, 0, 0, 0.25);
+$linearOrangeLight: linear-gradient(
+  90deg,
+  $accentLight -10%,
+  $accentMedium 110%
+);
+$linearOrange: linear-gradient(90deg, $accentMedium -10%, $accentDefault 110%);
+$linearBlack: linear-gradient(90deg, $primaryLight -10%, $primaryMedium 110%);
