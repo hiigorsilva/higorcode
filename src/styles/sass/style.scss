@@ -168,6 +168,72 @@
       }
     }
   }
+  & .popup-wrapper {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background: rgba(3, 7, 18, 0.8);
+    position: fixed;
+    inset: 0 0 0 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10;
+    & .popup {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      position: relative;
+      max-width: 920px;
+      width: 90%;
+      height: 90%;
+      & .popup-close {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        right: -3rem;
+        padding: 2px;
+        width: 2.5rem;
+        aspect-ratio: 1/1;
+        background: $linearOrangeLight;
+        border: none;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        outline: none;
+        cursor: pointer;
+        transition: 0.3s ease-out;
+        -webkit-transition: 0.3s ease-out;
+        -moz-transition: 0.3s ease-out;
+        -ms-transition: 0.3s ease-out;
+        -o-transition: 0.3s ease-out;
+        &:hover {
+          background: $linearOrange;
+        }
+        & svg {
+          color: $primaryDefault;
+        }
+      }
+      & .popup-page {
+        height: 100%;
+        width: 100%;
+        overflow-y: scroll;
+        border: 1px solid $detailsWhite;
+        border-radius: 0.25rem;
+        -webkit-border-radius: 0.25rem;
+        -moz-border-radius: 0.25rem;
+        -ms-border-radius: 0.25rem;
+        -o-border-radius: 0.25rem;
+        & img {
+          background-position-y: top;
+          height: auto;
+        }
+      }
+    }
+  }
 }
 .method {
   padding-block: 5rem;
@@ -426,6 +492,9 @@
         & strong {
           font-weight: 600;
           color: $secundaryDefault;
+          &::first-letter {
+            color: $accentMedium;
+          }
         }
         & .separator {
           width: 0.25rem;
@@ -580,6 +649,7 @@
   -o-border-radius: 5rem;
   background: rgba(9, 9, 44, 0.575);
   backdrop-filter: blur(7.5rem);
+  opacity: 0;
   transform: translateX(100vw);
   -webkit-transform: translateX(100vw);
   -moz-transform: translateX(100vw);
@@ -590,8 +660,9 @@
   -moz-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
-  z-index: 10;
+  z-index: 5;
   &.show {
+    opacity: 1;
     transform: translateX(-50%);
     -webkit-transform: translateX(-50%);
     -moz-transform: translateX(-50%);

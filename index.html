@@ -4,6 +4,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="language" content="pt-BR">
+  <meta name="author" content="Higor Code">
+  <meta name="title" content="Higor Code - Landing Pages de Alta Conversão">
+  <meta name="description" content="Ajudo infoprodutores a transformar seus visitantes em clientes com o método DROP.">
+  <meta name="keywords"
+    content="Landing Page, Página de vendas, Página de captura, Página de obrigado, Vendas, Conversões, Infoprodutor, Infoproduto, Empreendedores, Design, Responsividade, Otimização, Persuasão, Copy">
+  <meta name="robots" content="index, follow">
+  <meta property="og:type" content="website">
+  <!--:::::::::: Open Graph (Mídias Sociais) ::::::::::-->
+  <meta property="og:title" content="Higor Code - Landing Pages de Alta Conversão">
+  <meta property="og:description"
+    content="Ajudo infoprodutores a transformar seus visitantes em clientes com o método DROP.">
+  <meta property="og:image" content="https://higorcode.com.br/src/images/og-image.webp">
+  <meta property="og:url" content="https://higorcode.com.br">
+  <!--:::::::::: Twitter Card ::::::::::-->
+  <meta name="twitter:title" content="Higor Code - Landing Pages de Alta Conversão">
+  <meta name="twitter:description"
+    content="Ajudo infoprodutores a transformar seus visitantes em clientes com o método DROP.">
+  <meta name="twitter:image" content="https://higorcode.com.br/src/images/twitter-image.webp">
+  <meta name="twitter:card" content="summary_large_image">
   <title>Landing Pages | Higor Code</title>
   <link rel="stylesheet" href="./src/styles/css/style.css">
 </head>
@@ -25,7 +45,9 @@
           <iframe src="https://www.youtube.com/embed/hgvELtqvwSM?si=Ht5WFp8ZeG9CKLPX" frameborder="0"
             allowfullscreen></iframe>
         </div>
-        <a id="cta" class="cta" href="#">
+        <a id="cta" class="cta" data-text-cta="Quero solicitar orçamento"
+          href="https://wa.me/5562982040880?text=Ol%C3%A1+Higor%2C+eu+gostaria+de+solicitar+um+or%C3%A7amento+de+p%C3%A1gina"
+          rel="noopener" target="_blank">
           <span>Quero solicitar orçamento</span>
           <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_295_481)">
@@ -52,42 +74,56 @@
         </h2>
       </div>
       <div class="projects">
-        <button class="item">
+        <button class="item" onclick="handleOpenPopup(0)">
           <div class="overlay">
-            <img src="./src/images/pv-paulo.jpg" alt="Landing Page">
+            <img src="./src/images/lp-paulo-thumb.webp" loading="lazy" alt="Landing Page">
           </div>
           <div class="info">
             <h3>Curso de Investimento <span class="mark">| Paulo Medeiros</span></h3>
             <span>💎 Página de Vendas</span>
           </div>
         </button>
-        <button class="item">
+        <button class="item" onclick="handleOpenPopup(1)">
           <div class="overlay">
-            <img src="./src/images/pc-isabella.jpg" alt="Landing Page">
+            <img src="./src/images/lp-isabella-thumb.webp" loading="lazy" alt="Landing Page">
           </div>
           <div class="info">
             <h3>Webnário de Emagrecimento <span class="mark">| Isabella Manzatti</span></h3>
             <span>💎 Página de Captura</span>
           </div>
         </button>
-        <button class="item">
+        <button class="item" onclick="handleOpenPopup(2)">
           <div class="overlay">
-            <img src="./src/images/pc-carolina.jpg" alt="Landing Page">
+            <img src="./src/images/lp-carolina-thumb.webp" loading="lazy" alt="Landing Page">
           </div>
           <div class="info">
             <h3>Evento de Oratória <span class="mark">| Arte da Fala</span></h3>
             <span>💎 Página de Captura</span>
           </div>
         </button>
-        <button class="item">
+        <button class="item" onclick="handleOpenPopup(3)">
           <div class="overlay">
-            <img src="./src/images/pv-andre.jpg" alt="Landing Page">
+            <img src="./src/images/lp-andre-thumb.webp" loading="lazy" alt="Landing Page">
           </div>
           <div class="info">
             <h3>Consultoria Empresarial <span class="mark">| André Souto</span></h3>
             <span>💎 Página de Vendas</span>
           </div>
         </button>
+      </div>
+    </div>
+    <div class="popup-wrapper" onclick="handleClosePopup()">
+      <div class="popup">
+        <button class="popup-close" onclick="handleClosePopup()">
+          <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M17.9553 9.38645L14.4853 12.8564L17.9553 16.3264C18.029 16.3951 18.0881 16.4779 18.1291 16.5699C18.1701 16.6619 18.1921 16.7612 18.1939 16.8619C18.1957 16.9626 18.1771 17.0627 18.1394 17.156C18.1017 17.2494 18.0456 17.3343 17.9743 17.4055C17.9031 17.4767 17.8183 17.5328 17.7249 17.5706C17.6315 17.6083 17.5315 17.6268 17.4308 17.625C17.3301 17.6233 17.2308 17.6012 17.1388 17.5602C17.0468 17.5192 16.964 17.4601 16.8953 17.3864L13.4253 13.9164L9.9553 17.3864C9.81312 17.5189 9.62508 17.591 9.43078 17.5876C9.23648 17.5842 9.05109 17.5055 8.91368 17.3681C8.77626 17.2307 8.69755 17.0453 8.69412 16.851C8.6907 16.6567 8.76282 16.4686 8.8953 16.3264L12.3653 12.8564L8.8953 9.38645C8.76282 9.24427 8.6907 9.05622 8.69412 8.86192C8.69755 8.66762 8.77626 8.48224 8.91368 8.34482C9.05109 8.20741 9.23648 8.1287 9.43078 8.12527C9.62508 8.12184 9.81312 8.19397 9.9553 8.32645L13.4253 11.7964L16.8953 8.32645C17.0375 8.19397 17.2255 8.12184 17.4198 8.12527C17.6141 8.1287 17.7995 8.20741 17.9369 8.34482C18.0743 8.48224 18.153 8.66762 18.1565 8.86192C18.1599 9.05622 18.0878 9.24427 17.9553 9.38645ZM26.1753 12.8564C26.1753 15.3782 25.4275 17.8432 24.0265 19.94C22.6255 22.0367 20.6343 23.6709 18.3045 24.6359C15.9748 25.6009 13.4112 25.8534 10.9379 25.3615C8.46464 24.8695 6.19281 23.6552 4.40969 21.8721C2.62657 20.0889 1.41225 17.8171 0.920286 15.3438C0.428325 12.8706 0.680817 10.307 1.64583 7.97723C2.61085 5.64747 4.24505 3.6562 6.34178 2.25521C8.4385 0.85422 10.9036 0.106445 13.4253 0.106445C16.8056 0.110415 20.0463 1.45499 22.4365 3.84522C24.8268 6.23545 26.1713 9.47615 26.1753 12.8564ZM24.6753 12.8564C24.6753 10.6314 24.0155 8.45633 22.7793 6.60628C21.5432 4.75623 19.7862 3.31429 17.7305 2.4628C15.6748 1.61131 13.4128 1.38853 11.2305 1.82261C9.04825 2.25669 7.04369 3.32815 5.47035 4.90149C3.89701 6.47483 2.82555 8.47939 2.39146 10.6617C1.95738 12.844 2.18017 15.106 3.03165 17.1616C3.88314 19.2173 5.32508 20.9743 7.17513 22.2105C9.02519 23.4466 11.2003 24.1064 13.4253 24.1064C16.408 24.1031 19.2675 22.9168 21.3766 20.8077C23.4857 18.6987 24.672 15.8391 24.6753 12.8564Z"
+              fill="currentColor" />
+          </svg>
+        </button>
+        <div class="popup-page">
+          <img id="page" src="" loading="lazy" alt="Landing Page">
+        </div>
       </div>
     </div>
   </section>
@@ -206,7 +242,7 @@
       </div>
       <div class="areas">
         <div class="leftside">
-          <img src="./src/images/img-graphic.png" alt="Gráfico de taxa de conversão">
+          <img src="./src/images/img-graphic.webp" loading="lazy" alt="Gráfico de taxa de conversão">
         </div>
         <div class="rightside">
           <p>
@@ -483,7 +519,9 @@
     </div>
     <div class="rightside">
       <div>
-        <a class="cta" href="#">
+        <a class="cta"
+          href="https://wa.me/5562982040880?text=Ol%C3%A1+Higor%2C+eu+gostaria+de+solicitar+um+or%C3%A7amento+de+p%C3%A1gina"
+          rel="noopener" target="_blank">
           <span>Solicitar orçamento</span>
           <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_295_481)">
@@ -501,7 +539,7 @@
       </div>
     </div>
   </div>
-  <script src="./src/js/app.js"></script>
+  <script defer src="./src/js/app.js"></script>
 </body>
 
 </html>
