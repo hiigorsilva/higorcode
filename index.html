@@ -26,10 +26,13 @@
   <meta name="twitter:card" content="summary_large_image">
   <title>Landing Pages | Higor Code</title>
   <link rel="stylesheet" href="./src/styles/css/style.css">
+  <!--:::::::::: Pré-Carregamento ::::::::::-->
+  <link rel="preload" href="./src/fonts/outfit-regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="./src/fonts/outfit-semibold.woff2" as="font" type="font/woff2" crossorigin>
 </head>
 
 <body>
-  <section class="hero">
+  <section class="hero" id="top">
     <div class="content container">
       <div class="headline">
         <h1 class="title">
@@ -41,9 +44,8 @@
       </div>
       <div class="vsl-area">
         <div class="player">
-          <!-- img overlay -->
-          <iframe src="https://www.youtube.com/embed/hgvELtqvwSM?si=Ht5WFp8ZeG9CKLPX" frameborder="0"
-            allowfullscreen></iframe>
+          <img class="overlay-image" id="overlay-image" src="./src/images/overlay-image.jpg" alt="Capa do vídeo"
+            width="720" height="405">
         </div>
         <a id="cta" class="cta" data-text-cta="Quero solicitar orçamento"
           href="https://wa.me/5562982040880?text=Ol%C3%A1+Higor%2C+eu+gostaria+de+solicitar+um+or%C3%A7amento+de+p%C3%A1gina"
@@ -420,9 +422,9 @@
             </svg>
           </summary>
           <ul class="response">
-            <p>
+            <li class="remove-circle">
               Os pagamentos são via Pix e cartão de crédito nas seguintes modalidades:
-            </p>
+            </li>
             <li>à vista com desconto, ou</li>
             <li>50/50 (metade do valor no início e o restante na entrega da página).</li>
           </ul>
@@ -511,6 +513,13 @@
       <span>
         Copywriting © 2023 | Todos os direitos reservados.
       </span>
+      <a href="#top" class="return-top">
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M30.6937 23.6948C30.4973 23.8902 30.231 24 29.9535 24C29.6759 24 29.4097 23.8902 29.2133 23.6948L15.9874 10.5194L2.76153 23.6948C2.56297 23.8791 2.30034 23.9795 2.02898 23.9747C1.75761 23.97 1.4987 23.8604 1.30679 23.6692C1.11488 23.478 1.00495 23.2201 1.00016 22.9497C0.995375 22.6793 1.0961 22.4177 1.28113 22.2198L15.2472 8.3052C15.4436 8.10977 15.7098 8 15.9874 8C16.265 8 16.5312 8.10977 16.7276 8.3052L30.6937 22.2198C30.8898 22.4155 31 22.6808 31 22.9573C31 23.2339 30.8898 23.4991 30.6937 23.6948Z"
+            fill="currentColor" />
+        </svg>
+      </a>
     </div>
   </footer>
   <div id="ctaBar" class="cta-bar">

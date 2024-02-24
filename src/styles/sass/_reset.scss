@@ -8,7 +8,7 @@ body {
   font-family: "outfit", sans-serif, system-ui;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: auto;
-  // overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 img {
   display: block;

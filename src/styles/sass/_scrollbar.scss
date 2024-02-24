@@ -1,0 +1,14 @@
+*::-webkit-scrollbar {
+  width: 0.5rem;
+}
+*::-webkit-scrollbar-track {
+  background: $primaryMedium;
+}
+*::-webkit-scrollbar-thumb {
+  background: $primaryGray;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+}

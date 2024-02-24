@@ -1,3 +1,16 @@
+// LOADING VIDEO YOUTUBE
+document.addEventListener("DOMContentLoaded", () => {
+  const urlVideo =
+    "https://www.youtube.com/embed/hgvELtqvwSM?si=Ht5WFp8ZeG9CKLPX"
+  const playerContainer = document.querySelector(".player")
+  const overlayVideo = document.querySelector("#overlay-image")
+
+  overlayVideo.addEventListener("click", (event) => {
+    event.display = "none"
+    playerContainer.innerHTML = `<iframe src="${urlVideo}" title="Apresentação do método DROP em Landing Pages com alto poder de conversão" frameborder="0" allowfullscreen></iframe>`
+  })
+})
+
 // BARRA DO CTA (ENTRADA E SAÍDA)
 window.addEventListener("scroll", () => {
   const ctaBar = document.querySelector("#ctaBar")
