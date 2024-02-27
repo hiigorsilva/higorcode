@@ -198,6 +198,13 @@
       }
     }
   }
+  .footer {
+    & .content {
+      & .return-top {
+        display: none;
+      }
+    }
+  }
   .cta-bar {
     min-width: auto;
     & .leftside {
