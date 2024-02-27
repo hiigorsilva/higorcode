@@ -3,7 +3,6 @@
 @import "variables";
 @import "utilities";
 @import "scrollbar";
-
 .hero {
   position: relative;
   padding-block: 5rem;
@@ -628,7 +627,7 @@
     justify-content: center;
     align-items: center;
     padding-inline: 1.25rem;
-    & span {
+    & span:not(#currentYear) {
       display: block;
       font-size: 0.875rem;
       font-weight: 400;

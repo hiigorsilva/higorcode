@@ -1,3 +1,9 @@
+// ATUALIZAÇÃO DO ANO ATUAL NO FOOTER
+const yearElement = document.querySelector("#currentYear")
+const currentDate = new Date()
+const fullYear = currentDate.getFullYear()
+yearElement.textContent = fullYear
+
 // LOADING VIDEO YOUTUBE
 document.addEventListener("DOMContentLoaded", () => {
   const urlVideo =
