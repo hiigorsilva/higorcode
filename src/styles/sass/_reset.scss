@@ -2,12 +2,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 html,
 body {
   font-family: "outfit", sans-serif, system-ui;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: auto;
   scroll-behavior: smooth;
 }
 img {
