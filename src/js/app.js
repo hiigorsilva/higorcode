@@ -7,7 +7,7 @@ yearElement.textContent = fullYear
 // LOADING VIDEO YOUTUBE
 document.addEventListener("DOMContentLoaded", () => {
   const urlVideo =
-    "https://www.youtube.com/embed/L6_KS090YTg?si=0xoxZocKG-Ii1-kg"
+    "https://www.youtube.com/embed/M5YgFBzHFds?si=Idzuryzh2w6ZTN5Y"
   const playerContainer = document.querySelector(".player")
   const overlayVideo = document.querySelector("#overlay-image")
 

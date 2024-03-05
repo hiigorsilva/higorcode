@@ -296,40 +296,8 @@
     }
   }
 }
-.situation {
-  padding-block: 5rem;
-  background: $primaryMedium;
-  & .content {
-    padding-inline: 1.25rem;
-    & .areas {
-      display: flex;
-      justify-content: space-between;
-      gap: 2rem;
-      & .leftside {
-        display: flex;
-        flex: 1;
-        align-items: center;
-        & > img {
-          max-width: 550px;
-        }
-      }
-      & .rightside {
-        display: flex;
-        flex: 1;
-        flex-direction: column;
-        gap: 1.5rem;
-        & p {
-          font-size: 1rem;
-          font-weight: 400;
-          color: $secundaryText;
-          max-width: 550px;
-        }
-      }
-    }
-  }
-}
 .target {
-  background: $primaryMedium;
+  background: $primaryDefault;
   padding-block: 2rem;
   padding-inline: 1.25rem;
   & .content {
@@ -395,7 +363,7 @@
 }
 .services {
   padding-block: 5rem;
-  background: $primaryMedium;
+  background: $primaryDefault;
   & .content {
     @extend .container;
     padding-inline: 1.25rem;
@@ -468,7 +436,7 @@
 }
 .about {
   padding-block: 5rem;
-  background: $primaryDefault;
+  background: $primaryMedium;
   .content {
     @extend .container;
     padding-inline: 1.25rem;
