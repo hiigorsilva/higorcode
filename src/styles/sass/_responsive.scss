@@ -39,15 +39,6 @@
       }
     }
   }
-  .services {
-    & .content {
-      & .cards {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 2.5rem 1rem;
-      }
-    }
-  }
 }
 @media (max-width: 768px) {
   .title {
@@ -57,75 +48,6 @@
     & .content {
       & .stages {
         gap: 3rem 1.5rem;
-      }
-    }
-  }
-  .situation {
-    & .areas {
-      flex-direction: column;
-      justify-content: flex-start;
-      align-items: center;
-      & .rightside {
-        & p {
-          max-width: none;
-        }
-      }
-    }
-  }
-  .target {
-    & .content {
-      flex-direction: column;
-      gap: 2rem;
-      & .leftside {
-        position: relative;
-        max-width: none;
-        &::before {
-          content: "";
-          position: absolute;
-          bottom: -1rem;
-          left: 0;
-          right: 0;
-          display: block;
-          width: 100%;
-          height: 1px;
-          background: $detailsWhite;
-          border-radius: 2px;
-          -webkit-border-radius: 2px;
-          -moz-border-radius: 2px;
-          -ms-border-radius: 2px;
-          -o-border-radius: 2px;
-        }
-        & > svg {
-          display: none;
-        }
-      }
-      & .rightside {
-        flex-direction: column;
-        justify-content: flex-start;
-        & li {
-          max-width: none;
-        }
-      }
-    }
-  }
-  .services {
-    & .content {
-      & .cards {
-        & .item {
-          max-width: none;
-          min-width: auto;
-        }
-      }
-      & > p {
-        text-align: start;
-        max-width: none;
-      }
-    }
-  }
-  .about {
-    & .content {
-      & .text {
-        max-width: none;
       }
     }
   }
@@ -185,19 +107,6 @@
       }
     }
   }
-  .target {
-    & .content {
-      padding: 2rem;
-    }
-  }
-  .services {
-    & .content {
-      & > p {
-        max-width: none;
-        text-align: start;
-      }
-    }
-  }
   .footer {
     & .content {
       & .return-top {
@@ -214,22 +123,6 @@
       & .cta {
         & > span {
           white-space: nowrap;
-        }
-      }
-    }
-  }
-}
-@media (max-width: 430px) {
-  .about {
-    & .content {
-      & .text {
-        & .drop {
-          display: grid;
-          grid-template-columns: 1fr 1fr;
-          gap: 1rem;
-          & .separator {
-            display: none;
-          }
         }
       }
     }
