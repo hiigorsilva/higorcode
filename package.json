@@ -1,0 +1,36 @@
+{
+  "name": "higorcode",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "prepare": "husky"
+  },
+  "dependencies": {
+    "@astrojs/react": "^4.2.1",
+    "@radix-ui/react-dialog": "^1.1.6",
+    "@radix-ui/react-slot": "^1.1.2",
+    "@tailwindcss/vite": "^4.0.15",
+    "@types/react": "^18.3.19",
+    "@types/react-dom": "^18.3.5",
+    "astro": "^5.5.4",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "lucide-react": "^0.483.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "tailwind-merge": "^3.0.2",
+    "tailwindcss": "^4.0.15",
+    "tw-animate-css": "^1.2.4",
+    "uuid": "^11.1.0"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
+    "git-commit-msg-linter": "^5.0.8",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.5.0"
+  }
+}
