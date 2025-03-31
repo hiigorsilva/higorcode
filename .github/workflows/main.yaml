@@ -1,0 +1,43 @@
+name: CI/CD Higor Code
+
+on: 
+  pull_request:
+    branches: [ 'main' ]
+
+jobs:
+  CI:
+    name: Continuos Integration
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code # Clona o repositorio para ter acesso ao projeto no servidor
+        uses: actions/checkout@v4
+      
+      - name: Setup Node.js # Instala o Node.js na versão 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install Dependencies # Instala as dependencias do projeto
+        run: npm install
+      
+      - name: Build Project # Compila o projeto
+        run: npm run build
+
+  CD: 
+    name: Continuos Deploy
+    runs-on: ubuntu-latest
+    needs: CI
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Install Vercel CLI
+        run: npm install --global vercel@latest
+
+      - name: Pull Vercel Environment Information
+        run: vercel pull --yes --environment=production --token=${{ secrets.VERCEL_TOKEN }}
+      
+      - name: Build Project Artifacts
+        run: vercel build --prod --token=${{ secrets.VERCEL_TOKEN }}
+    
+      - name: Deploy Project Artifacts to Vercel
+        run: vercel deploy --prebuilt --prod --token=${{ secrets.VERCEL_TOKEN }} 
