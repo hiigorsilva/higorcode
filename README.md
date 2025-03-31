@@ -2,15 +2,15 @@
 
 ### Tecnologias
 
-### 💻 Front-end
+#### 💻 Front-end
 - Astro JS
 - TypeScript
 - React JS
 
-### 🎨 Estilos
+#### 🎨 Estilos
 - Tailwind CSS
 
-### ⚒️ Infraestrutura
+#### ⚒️ Infraestrutura
 - CI / CD
 - Vercel
 - Github Actions
