@@ -7,7 +7,7 @@ export const CtaSection = () => {
 	return (
 		<section className="relative w-full rounded-2xl bg-foreground overflow-hidden shadow-2xl shadow-zinc-950/25">
 			{/* ICON MORE CONTENT */}
-			<MoreContentIcon className="absolute -top-px left-1/2 z-10 -translate-x-1/2 w-[108px] h-[32px] md:w-[135px] md:h-[40px]" />
+			<MoreContentIcon className="hidden md:block absolute -top-px left-1/2 z-10 -translate-x-1/2 w-[108px] h-[32px] md:w-[135px] md:h-[40px]" />
 
 			{/* IMAGE */}
 			<LabelIcon className="hidden sm:block absolute -top-12 -right-20 z-0 size-[280px] md:size-[430px] text-muted-foreground/20" />
