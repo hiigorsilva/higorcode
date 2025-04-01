@@ -12,14 +12,27 @@ import LayoutLP from "@/layouts/LayoutLP.astro";
 	<main class="relative w-full h-fit dark:bg-gradient-to-r dark:from-zinc-900 dark:from-[-10%] dark:to-zinc-950 dark:to-40% overflow-hidden">
 		<!-- IMAGE LEFT -->
 		<img 
-			class="absolute bottom-[8%] md:-bottom-[5%] lg:-bottom-[15%] xl:-bottom-[15%] -left-[50%] xl:-left-[40%] -z-0 mix-blend-plus-lighter blur-lg animate-pulse" 
+			class="hidden md:block absolute bottom-[8%] md:-bottom-[5%] lg:-bottom-[15%] xl:-bottom-[15%] -left-[50%] xl:-left-[40%] -z-0 mix-blend-plus-lighter blur-lg animate-pulse" 
 			src="/images/landing-page/img-blur-left.webp" 
 			alt="Imagem de fundo abstrata"
 		>
+		<!-- IMAGE LEFT SMALL -->
+		<img 
+			class="block md:hidden absolute bottom-[2%] -left-[2%] -z-0 mix-blend-plus-lighter blur-lg animate-pulse" 
+			src="/images/landing-page/img-blur-left-sm.webp" 
+			alt="Imagem de fundo abstrata"
+		>
+
 		<!-- IMAGE RIGHT -->
 		<img 
-			class="absolute top-[10%] -right-[30%] md:top-[0%] md:-right-[30%] xl:-right-[10%] -z-0 mix-blend-plus-lighter blur-lg animate-pulse" 
+			class="hidden md:block absolute md:top-[0%] md:-right-[30%] xl:-right-[10%] -z-0 mix-blend-plus-lighter blur-lg animate-pulse" 
 			src="/images/landing-page/img-blur-right.webp" 
+			alt="Imagem de fundo abstrata"
+		>
+		<!-- IMAGE RIGHT SMALL -->
+		<img 
+			class="block md:hidden absolute top-[8%] -right-[15%] sm:-right-[8%] -z-0 mix-blend-plus-lighter blur-lg animate-pulse" 
+			src="/images/landing-page/img-blur-right-sm.webp" 
 			alt="Imagem de fundo abstrata"
 		>
 

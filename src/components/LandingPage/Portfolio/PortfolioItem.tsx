@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import type { PortfolioType } from "@/data/landing-page/portfolio";
-import { type ComponentProps, type MouseEventHandler, useState } from "react";
+import { type ComponentProps, useState } from "react";
 import { PortfolioItemModal } from "./PortfolioItemModal";
 
 type PortfolioItemProps = ComponentProps<"div"> & {
