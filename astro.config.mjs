@@ -12,11 +12,4 @@ export default defineConfig({
 	vite: {
 		plugins: [tailwindcss()],
 	},
-
-	redirects: {
-		"/": {
-			destination: "/lp",
-			status: 301,
-		},
-	},
 });
