@@ -1,0 +1,21 @@
+::-webkit-scrollbar {
+	width: 0.25rem;
+	height: 0.25rem;
+  background-color: var(--card);
+  border: 0;
+  outline: none;
+  padding: 0;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--foreground);
+  outline: none;
+  -webkit-outline: none;
+  -moz-outline: none;
+  -os-outline: none;
+  border: 0;
+  border-radius: 4rem;
+  -webkit-border-radius: 4rem;
+  -moz-border-radius: 4rem;
+  -os-border-radius: 4rem;
+}
