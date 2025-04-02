@@ -1,16 +1,18 @@
 # Higor Code
 
-### Tecnologias
+## Tecnologias
 
-#### 💻 Front-end
+### 💻 Front-end
 - Astro JS
 - TypeScript
 - React JS
 
-#### 🎨 Estilos
+### 🎨 Estilos e UI
 - Tailwind CSS
+- Shadcn UI
 
-#### ⚒️ Infraestrutura
-- CI / CD
+### ⚒️ DevOps
+- CI/CD
+- Git
 - Vercel
 - Github Actions
