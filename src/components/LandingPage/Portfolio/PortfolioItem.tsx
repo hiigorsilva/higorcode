@@ -20,13 +20,17 @@ export const PortfolioItem = ({ page }: PortfolioItemProps) => {
 			onClick={handleClick}
 			className="max-w-xl lg:max-w-none w-full rounded-xl border border-foreground/25 cursor-pointer transition duration-200 hover:scale-[99%] overflow-hidden"
 		>
-			<div className="relative min-w-80 w-full aspect-square overflow-hidden">
+			<figure className="relative min-w-80 w-full aspect-square overflow-hidden">
 				<img
 					className="absolute left-0 top-0 block w-full object-cover"
 					src={page.thumb}
 					alt={page.title}
+					width={600}
+					height={690}
+					draggable={false}
+					loading="lazy"
 				/>
-			</div>
+			</figure>
 
 			<div className="w-full h-px bg-foreground/25" />
 

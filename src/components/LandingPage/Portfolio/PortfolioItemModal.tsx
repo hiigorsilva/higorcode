@@ -27,16 +27,23 @@ export const PortfolioItemModal = ({
 
 			<DialogContent
 				onClick={(e) => e.stopPropagation()}
-				className="min-w-[70vw] max-h-[85dvh] h-fit overflow-y-scroll p-0 border border-foreground/15"
+				className="min-w-[70dvw] max-h-[85dvh] h-fit overflow-y-scroll p-0 border border-foreground/15"
 			>
 				<DialogHeader className="sr-only">
 					<DialogTitle>{page.title}</DialogTitle>
 					<DialogDescription>{page.project}</DialogDescription>
 				</DialogHeader>
 
-				<div className="flex-1 w-full rounded-md overflow-hidden">
-					<img className="w-full" src={page.image} alt={page.title} />
-				</div>
+				<figure className="flex-1 w-full rounded-md overflow-hidden">
+					<img
+						className="w-full"
+						src={page.image}
+						alt={page.title}
+						width="70vw"
+						loading="lazy"
+						draggable={false}
+					/>
+				</figure>
 			</DialogContent>
 		</Dialog>
 	);
