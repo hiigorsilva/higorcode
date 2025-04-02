@@ -1,15 +1,15 @@
 ---
-import '@/styles/global.css';
+import HeadSEO from "@/components/HeadSEO.astro";
+import "@/styles/global.css";
 ---
 
 <!doctype html>
 <html lang="pt-BR">
 	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Higor Code | Desenvolvedor Web Front-End</title>
+		<HeadSEO 
+			title="Desenvolvedor Web Front End | Higor Code" 
+			description="Aumente as vendas do seu infoproduto com páginas otimizadas para conversão" 
+		/>
 	</head>
 	<body>
 		<slot />
