@@ -10,6 +10,14 @@ import LayoutLP from "@/layouts/LayoutLP.astro";
 
 <LayoutLP>
 	<main class="relative w-full h-fit dark:bg-gradient-to-r dark:from-zinc-900 dark:from-[-10%] dark:to-zinc-950 dark:to-40% overflow-hidden">
+		<ContainerLayout className="px-5">
+			<HeroSection />
+			<BenefitsSection />
+			<PortfolioSection client:visible />
+			<CtaSection />
+			<FooterSection client:visible />
+		</ContainerLayout>
+		
 		<!-- IMAGE LEFT -->
 		<img 
 			class="hidden md:block absolute bottom-[8%] md:-bottom-[5%] lg:-bottom-[15%] xl:-bottom-[15%] -left-[50%] xl:-left-[40%] -z-0 mix-blend-plus-lighter blur-lg animate-pulse" 
@@ -35,13 +43,5 @@ import LayoutLP from "@/layouts/LayoutLP.astro";
 			src="/images/landing-page/img-blur-right-sm.webp" 
 			alt="Imagem de fundo abstrata"
 		>
-
-		<ContainerLayout>
-			<HeroSection />
-			<BenefitsSection />
-			<PortfolioSection client:visible />
-			<CtaSection />
-			<FooterSection client:visible />
-		</ContainerLayout>
 	</main>
 </LayoutLP>
