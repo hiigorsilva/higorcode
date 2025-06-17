@@ -5,7 +5,10 @@ import { BriefcaseIcon, GraduationCapIcon } from "lucide-react";
 
 export const ExperienceSection = () => {
 	return (
-		<section id="experience" className="w-full h-fit bg-zinc-900 py-36">
+		<section
+			id="experience"
+			className="w-full h-fit bg-secondary dark:bg-zinc-900 py-36"
+		>
 			<ContainerLayout className="flex justify-center items-center">
 				<div className="grid grid-cols-2 gap-16">
 					{/* EXPERIENCE */}
