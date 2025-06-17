@@ -1,15 +1,14 @@
 ---
-import { ExperienceSection } from "@/components/home/Experience/Experience";
-import { HeroSection } from "@/components/home/Hero/Hero";
-import { ProjectsSection } from "@/components/home/Projects/Projects";
+import { ExperienceSection } from "@/components/Home/Experience/Experience";
+import { HeroSection } from "@/components/Home/Hero/Hero";
+import { ProjectsSection } from "@/components/Home/Projects/Projects";
 import Layout from "@/layouts/Layout.astro";
 ---
 
 <Layout>
   <main class="min-h-dvh grid bg-background dark:bg-gradient-to-r dark:from-zinc-900 dark:to-zinc-950 dark:to-40% text-foreground">
-    <HeroSection />
+    <HeroSection client:visible />
     <ExperienceSection />
     <ProjectsSection />
   </main>
 </Layout>
-

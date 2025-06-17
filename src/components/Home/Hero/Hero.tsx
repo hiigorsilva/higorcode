@@ -2,10 +2,51 @@ import { ContainerLayout } from "@/components/Globals/ContainerLayout";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { MouseIcon, NotepadTextIcon } from "lucide-react";
+import { useEffect, useRef, useState } from "react";
 
 export const HeroSection = () => {
+	const heroRef = useRef<HTMLDivElement>(null);
+	const [scrollPosition, setScrollPosition] = useState(0);
+
+	console.log(scrollPosition);
+
+	useEffect(() => {
+		if (!heroRef.current) return;
+
+		const updateScrollPosition = () => {
+			const heroSectionHeight = heroRef.current?.clientHeight || 0;
+			setScrollPosition(heroSectionHeight);
+		};
+
+		// Atualiza imediatamente
+		updateScrollPosition();
+
+		// Configura o ResizeObserver para monitorar mudanças
+		const resizeObserver = new ResizeObserver(updateScrollPosition);
+		resizeObserver.observe(heroRef.current);
+
+		// Configura o listener para redimensionamento da janela
+		window.addEventListener("resize", updateScrollPosition);
+
+		// Limpeza
+		return () => {
+			resizeObserver.disconnect();
+			window.removeEventListener("resize", updateScrollPosition);
+		};
+	}, []);
+
+	const handleScrollToNextSection = () => {
+		window.scrollTo({
+			top: scrollPosition,
+			behavior: "smooth",
+		});
+	};
+
 	return (
-		<section className="min-h-dvh w-full py-10 px-5 flex flex-col justify-center items-center">
+		<section
+			ref={heroRef}
+			className="min-h-dvh w-full py-10 px-5 flex flex-col justify-center items-center"
+		>
 			<ContainerLayout className="flex justify-center items-center">
 				<div className="max-w-2xl w-full flex flex-col items-center gap-8">
 					{/* BADGE */}
@@ -49,15 +90,16 @@ export const HeroSection = () => {
 					</div>
 
 					{/* MORE CONTENT ICON */}
-					<a
-						href="/#experience"
-						className="flex flex-col items-center gap-1 pt-10"
+					<Button
+						variant="ghost"
+						className="flex flex-col items-center gap-1 w-fit h-fit p-2 mt-10"
+						onClick={handleScrollToNextSection}
 					>
 						<MouseIcon className="text-muted-foreground animate-bounce" />
 						<span className="font-light text-xs text-muted-foreground uppercase">
 							Ver mais
 						</span>
-					</a>
+					</Button>
 				</div>
 			</ContainerLayout>
 		</section>
