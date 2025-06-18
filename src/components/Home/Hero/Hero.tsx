@@ -8,8 +8,6 @@ export const HeroSection = () => {
 	const heroRef = useRef<HTMLDivElement>(null);
 	const [scrollPosition, setScrollPosition] = useState(0);
 
-	console.log(scrollPosition);
-
 	useEffect(() => {
 		if (!heroRef.current) return;
 
