@@ -8,8 +8,6 @@ export const ContainerLayout = ({
 	className,
 }: ContainerLayoutProps) => {
 	return (
-		<div className={cn("max-w-7xl w-full mx-auto px-5", className)}>
-			{children}
-		</div>
+		<div className={cn("max-w-7xl w-full mx-auto", className)}>{children}</div>
 	);
 };
