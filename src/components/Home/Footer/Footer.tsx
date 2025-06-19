@@ -14,7 +14,7 @@ export const FooterSection = () => {
 
 	return (
 		<footer className="w-full h-fit px-5">
-			<ContainerLayout className="flex justify-between items-center gap-6 border-t border-border py-8">
+			<ContainerLayout className="flex flex-col-reverse md:flex-row justify-between items-center gap-6 border-t border-border py-8">
 				{/* COPYRIGHT */}
 				<div className="flex justify-start items-center gap-2">
 					<span className="font-light text-sm text-muted-foreground text-nowrap">
