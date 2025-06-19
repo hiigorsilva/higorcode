@@ -27,13 +27,13 @@ export const ContactSection = () => {
 					</div>
 
 					{/* CARD CONTACT */}
-					<Card className="max-w-80 w-full">
+					<Card className="w-full">
 						<CardContent className="flex flex-col gap-4">
 							{contacts.map((contact) => (
 								<Button
 									key={contact.title}
 									variant="ghost"
-									className="w-full h-fit justify-start text-start"
+									className="w-fit h-fit justify-start text-start"
 									asChild
 								>
 									<a
