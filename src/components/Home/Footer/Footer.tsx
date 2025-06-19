@@ -3,6 +3,8 @@ import { Button } from "@/components/ui/button";
 import { ChevronUpIcon } from "lucide-react";
 
 export const FooterSection = () => {
+	const currentYear = new Date().getFullYear();
+
 	const handleScrollToTop = () => {
 		window.scrollTo({
 			top: 0,
@@ -16,7 +18,7 @@ export const FooterSection = () => {
 				{/* COPYRIGHT */}
 				<div className="flex justify-start items-center gap-2">
 					<span className="font-light text-sm text-muted-foreground text-nowrap">
-						© Higor Code 2025.
+						© Higor Code {currentYear}.
 					</span>
 					<span className="font-light text-sm text-muted-foreground text-nowrap">
 						Todos os direitos reservados.
