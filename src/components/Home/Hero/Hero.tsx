@@ -54,13 +54,13 @@ export const HeroSection = () => {
 
 					{/* HEADLINE */}
 					<div className="flex flex-col gap-3">
-						<h1 className="font-light text-5xl text-center text-foreground uppercase tracking-tight">
+						<h1 className="font-light text-4xl md:text-5xl text-center text-foreground text-balance md:text-pretty uppercase tracking-tight">
 							Me chamo Higor Silva e{" "}
 							<span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-300 to-orange-400">
 								Desenvolvo interfaces web
 							</span>
 						</h1>
-						<p className="text-xl text-center text-muted-foreground">
+						<p className="text-base md:text-xl text-center text-muted-foreground text-balance md:text-pretty">
 							Busco oportunidade como Dev Front-End, focado em{" "}
 							<strong className="font-medium text-foreground">
 								ReactJS, NextJS e TypeScript

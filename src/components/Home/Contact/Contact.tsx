@@ -7,7 +7,7 @@ import { Users2Icon } from "lucide-react";
 
 export const ContactSection = () => {
 	return (
-		<section id="experience" className="w-full h-fit py-36 px-5">
+		<section id="contact" className="w-full h-fit py-36 px-5">
 			<ContainerLayout className="flex flex-col gap-6">
 				{/* TITLE */}
 				<div className="flex items-center gap-3">
