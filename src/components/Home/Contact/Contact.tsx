@@ -1,5 +1,4 @@
 import { ContainerLayout } from "@/components/Globals/ContainerLayout";
-import { InstagramIcon } from "@/components/Home/icons/Instagram";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { contacts } from "@/data/home/contact";
@@ -7,17 +6,17 @@ import { Users2Icon } from "lucide-react";
 
 export const ContactSection = () => {
 	return (
-		<section id="contact" className="w-full h-fit py-36 px-5">
+		<section id="contact" className="w-full h-fit py-20 md:py-36 px-5">
 			<ContainerLayout className="flex flex-col gap-6">
 				{/* TITLE */}
 				<div className="flex items-center gap-3">
-					<Users2Icon className="size-8 shrink-0 text-orange-300" />
+					<Users2Icon className="size-8 shrink-0 text-orange-500 dark:text-orange-300" />
 					<h2 className="font-light text-3xl md:text-4xl text-foreground uppercase tracking-tight">
 						Contatos
 					</h2>
 				</div>
 
-				<div className="grid grid-cols-1 md:grid-cols-2 items-start gap-16">
+				<div className="grid grid-cols-1 md:grid-cols-2 items-start gap-8 md:gap-16">
 					{/* SUBTITLE */}
 					<div>
 						<p className="max-w-fit md:max-w-lg w-full text-base md:text-lg text-muted-foreground">

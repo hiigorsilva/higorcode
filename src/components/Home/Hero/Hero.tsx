@@ -54,7 +54,7 @@ export const HeroSection = () => {
 
 					{/* HEADLINE */}
 					<div className="flex flex-col gap-3">
-						<h1 className="font-light text-4xl md:text-5xl text-center text-foreground text-balance md:text-pretty uppercase tracking-tight">
+						<h1 className="font-light text-3xl sm:text-4xl md:text-5xl text-center text-foreground text-balance md:text-pretty uppercase tracking-tight">
 							Me chamo Higor Silva e{" "}
 							<span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-300 to-orange-400">
 								Desenvolvo interfaces web

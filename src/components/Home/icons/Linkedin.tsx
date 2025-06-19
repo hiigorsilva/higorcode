@@ -6,7 +6,10 @@ type LinkedinIconProps = ComponentProps<"svg">;
 export const LinkedinIcon = ({ className }: LinkedinIconProps) => {
 	return (
 		<svg
-			className={cn("size-5 shrink-0 text-orange-300", className)}
+			className={cn(
+				"size-5 shrink-0 text-orange-500 dark:text-orange-300",
+				className,
+			)}
 			viewBox="0 0 20 21"
 			fill="none"
 			xmlns="http://www.w3.org/2000/svg"

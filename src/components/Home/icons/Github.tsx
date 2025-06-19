@@ -6,7 +6,10 @@ type GithubIconProps = ComponentProps<"svg">;
 export const GithubIcon = ({ className }: GithubIconProps) => {
 	return (
 		<svg
-			className={cn("size-5 shrink-0 text-orange-300", className)}
+			className={cn(
+				"size-5 shrink-0 text-orange-500 dark:text-orange-300",
+				className,
+			)}
 			xmlns="http://www.w3.org/2000/svg"
 			viewBox="0 0 128 128"
 		>

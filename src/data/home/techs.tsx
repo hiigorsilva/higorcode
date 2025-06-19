@@ -85,7 +85,7 @@ export const techs = [
 					<Button
 						key={language.name}
 						variant="secondary"
-						className="h-fit min-w-52 w-full md:w-fit justify-start py-2 px-6 border border-border cursor-auto"
+						className="h-fit min-w-52 w-full md:w-fit justify-start bg-muted-foreground/50 dark:bg-muted-foreground/10 py-2 px-6 border border-border cursor-auto"
 						asChild
 					>
 						<li>
@@ -114,7 +114,7 @@ export const techs = [
 					<Button
 						key={framework.name}
 						variant="secondary"
-						className="h-fit min-w-52 w-fit justify-start py-2 px-6 border border-border cursor-auto"
+						className="h-fit min-w-52 w-fit justify-start bg-muted-foreground/50 dark:bg-muted-foreground/10 py-2 px-6 border border-border cursor-auto"
 						asChild
 					>
 						<li>
@@ -143,7 +143,7 @@ export const techs = [
 					<Button
 						key={style.name}
 						variant="secondary"
-						className="h-fit min-w-52 w-fit justify-start py-2 px-6 border border-border cursor-auto"
+						className="h-fit min-w-52 w-fit justify-start bg-muted-foreground/50 dark:bg-muted-foreground/10 py-2 px-6 border border-border cursor-auto"
 						asChild
 					>
 						<li>
@@ -172,7 +172,7 @@ export const techs = [
 					<Button
 						key={tool.name}
 						variant="secondary"
-						className="h-fit min-w-52 w-fit justify-start py-2 px-6 border border-border cursor-auto"
+						className="h-fit min-w-52 w-fit justify-start bg-muted-foreground/50 dark:bg-muted-foreground/10 py-2 px-6 border border-border cursor-auto"
 						asChild
 					>
 						<li>
