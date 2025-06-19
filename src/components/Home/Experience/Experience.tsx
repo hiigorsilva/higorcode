@@ -7,24 +7,24 @@ export const ExperienceSection = () => {
 	return (
 		<section
 			id="experience"
-			className="w-full h-fit bg-secondary dark:bg-zinc-900 py-36"
+			className="w-full h-fit bg-secondary dark:bg-zinc-900 py-36 px-5"
 		>
 			<ContainerLayout className="flex justify-center items-center">
-				<div className="grid grid-cols-2 gap-16">
+				<div className="grid grid-cols-1 xl:grid-cols-2 gap-24 md:gap-16">
 					{/* EXPERIENCE */}
-					<div className="flex flex-col gap-8">
-						<div className="flex items-center gap-3">
+					<div className="flex flex-col items-start gap-8">
+						<div className="flex justify-start items-center gap-3">
 							<BriefcaseIcon className="size-8 shrink-0 text-orange-300" />
-							<h2 className="font-light text-4xl text-foreground uppercase tracking-tight">
+							<h2 className="font-light text-3xl md:text-4xl text-foreground uppercase tracking-tight">
 								Experiência
 							</h2>
 						</div>
 
-						<ul>
+						<ul className="w-full flex flex-col items-start gap-16">
 							{experiences.map((experience) => (
 								<li
 									key={experience.title}
-									className="flex justify-center items-start gap-2"
+									className="w-full flex justify-center items-start gap-2"
 								>
 									{/* BULLET POINT */}
 									<div className="size-6 shrink-0 pt-1">
@@ -34,17 +34,17 @@ export const ExperienceSection = () => {
 									</div>
 
 									{/* ITEM */}
-									<div className="flex flex-col gap-3">
+									<div className="w-full flex flex-col gap-3">
 										{/* HEADER */}
-										<div className="flex justify-between items-center gap-4">
-											<h3 className="font-medium text-xl text-foreground uppercase tracking-tight">
+										<div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-2">
+											<h3 className="font-medium text-lg sm:text-xl text-foreground uppercase tracking-tight">
 												{experience.title}{" "}
 												<span className="text-muted-foreground">
 													| {experience.company}
 												</span>
 											</h3>
 
-											<div className="font-medium text-xs text-zinc-950 uppercase rounded-full bg-gradient-to-r from-orange-300 to-orange-400 px-2.5 py-1.5">
+											<div className="font-medium text-xs text-orange-300 uppercase rounded-full bg-gradient-to-r from-orange-300/15 to-orange-400/15 px-2.5 py-1.5">
 												{experience.period}
 											</div>
 										</div>
@@ -52,7 +52,7 @@ export const ExperienceSection = () => {
 										<Separator />
 
 										{/* DESCRIPTION */}
-										<p className="text-lg text-muted-foreground texpre">
+										<p className="text-lg text-muted-foreground text-pretty">
 											{experience.description}
 										</p>
 
@@ -62,18 +62,18 @@ export const ExperienceSection = () => {
 													Tecnologias usadas
 												</h4>
 
-												<div className="flex items-center gap-2">
+												<div className="flex flex-wrap items-center gap-2">
 													{experience.techs.map((tech) => (
 														<div
 															key={tech.name}
-															className="flex justify-center items-center gap-2 px-2.5 py-1.5 rounded-full bg-muted/25 border border-border"
+															className="flex flex-nowrap justify-center items-center gap-2 px-2.5 py-1.5 rounded-full bg-muted/25 border border-border"
 														>
 															<img
 																className="size-4"
 																src={tech.icon}
 																alt="fdssd"
 															/>
-															<span className="font-light text-xs text-muted-foreground uppercase">
+															<span className="font-light text-xs text-muted-foreground text-nowrap uppercase">
 																{tech.name}
 															</span>
 														</div>
@@ -88,19 +88,19 @@ export const ExperienceSection = () => {
 					</div>
 
 					{/* EDUCATION */}
-					<div className="flex flex-col gap-8">
-						<div className="flex items-center gap-3">
+					<div className="flex flex-col items-start gap-8">
+						<div className="flex justify-start items-center gap-3">
 							<GraduationCapIcon className="size-8 shrink-0 text-orange-300" />
-							<h2 className="font-light text-4xl text-foreground uppercase tracking-tight">
+							<h2 className="font-light text-3xl md:text-4xl text-foreground uppercase tracking-tight">
 								Educação
 							</h2>
 						</div>
 
-						<ul className="flex flex-col gap-16">
+						<ul className="w-full flex flex-col items-start gap-16">
 							{educations.map((education) => (
 								<li
 									key={education.title}
-									className="flex justify-center items-start gap-2"
+									className="w-full flex justify-center items-start gap-2"
 								>
 									{/* BULLET POINT */}
 									<div className="size-6 shrink-0 pt-1">
@@ -110,17 +110,17 @@ export const ExperienceSection = () => {
 									</div>
 
 									{/* ITEM */}
-									<div className="flex flex-col gap-3">
+									<div className="w-full flex flex-col gap-3">
 										{/* HEADER */}
-										<div className="flex justify-between items-center gap-4">
-											<h3 className="font-medium text-xl text-foreground uppercase tracking-tight">
+										<div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-2">
+											<h3 className="font-medium text-lg sm:text-xl text-foreground uppercase tracking-tight">
 												{education.title}{" "}
 												<span className="text-muted-foreground">
 													| {education.company}
 												</span>
 											</h3>
 
-											<div className="font-medium text-xs text-zinc-950 uppercase rounded-full bg-gradient-to-r from-orange-300 to-orange-400 px-2.5 py-1.5">
+											<div className="font-medium text-xs text-orange-300 uppercase rounded-full bg-gradient-to-r from-orange-300/15 to-orange-400/15 px-2.5 py-1.5">
 												{education.period}
 											</div>
 										</div>
@@ -128,7 +128,7 @@ export const ExperienceSection = () => {
 										<Separator />
 
 										{/* DESCRIPTION */}
-										<p className="text-lg text-muted-foreground texpre">
+										<p className="text-lg text-muted-foreground text-pretty">
 											{education.description}
 										</p>
 									</div>

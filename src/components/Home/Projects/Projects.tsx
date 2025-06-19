@@ -6,7 +6,7 @@ import { ProjectItem } from "./ProjectItem";
 export const ProjectsSection = () => {
 	return (
 		<section id="experience" className="w-full h-fit py-36 px-5">
-			<ContainerLayout className="flex flex-col justify-center items-center gap-16">
+			<ContainerLayout className="flex flex-col justify-center items-start md:items-center gap-16">
 				{/* TITLE */}
 				<div className="flex items-center gap-3">
 					<MonitorIcon className="size-8 shrink-0 text-orange-300" />
