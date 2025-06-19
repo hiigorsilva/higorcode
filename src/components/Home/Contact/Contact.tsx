@@ -7,20 +7,20 @@ import { Users2Icon } from "lucide-react";
 
 export const ContactSection = () => {
 	return (
-		<section id="experience" className="w-full h-fit py-36">
+		<section id="experience" className="w-full h-fit py-36 px-5">
 			<ContainerLayout className="flex flex-col gap-6">
 				{/* TITLE */}
 				<div className="flex items-center gap-3">
 					<Users2Icon className="size-8 shrink-0 text-orange-300" />
-					<h2 className="font-light text-4xl text-foreground uppercase tracking-tight">
+					<h2 className="font-light text-3xl md:text-4xl text-foreground uppercase tracking-tight">
 						Contatos
 					</h2>
 				</div>
 
-				<div className="grid grid-cols-2 items-start gap-16">
+				<div className="grid grid-cols-1 md:grid-cols-2 items-start gap-16">
 					{/* SUBTITLE */}
 					<div>
-						<p className="max-w-lg w-full text-lg text-muted-foreground">
+						<p className="max-w-fit md:max-w-lg w-full text-base md:text-lg text-muted-foreground">
 							Interessado em trabalhar juntos? Tem uma proposta de trabalho ou
 							projeto? Ficarei feliz em conversar com você!
 						</p>
