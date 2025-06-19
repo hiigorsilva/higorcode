@@ -85,7 +85,7 @@ export const techs = [
 					<Button
 						key={language.name}
 						variant="secondary"
-						className="h-fit min-w-52 w-fit justify-start py-2 px-6 border border-border cursor-auto"
+						className="h-fit min-w-52 w-full md:w-fit justify-start py-2 px-6 border border-border cursor-auto"
 						asChild
 					>
 						<li>

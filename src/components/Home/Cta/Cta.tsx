@@ -16,9 +16,8 @@ export const CtaSection = () => {
 					Vamos conversar?
 				</h2>
 				<div className="max-w-4xl w-full grid grid-cols-1 md:grid-cols-2 items-start gap-16 mx-auto">
-					{/* TITLE */}
 					<div className="flex flex-col gap-3">
-						<p className="text-lg text-center md:text-start text-background/75 text-balance md:text-pretty">
+						<p className="text-base md:text-lg text-center md:text-start text-background/75 text-balance md:text-pretty">
 							Estou aberto a novas oportunidades. Clique no botão e me mande uma
 							mensagem.
 						</p>
