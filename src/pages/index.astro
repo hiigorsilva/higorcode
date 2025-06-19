@@ -2,6 +2,7 @@
 import { ContactSection } from "@/components/Home/Contact/Contact";
 import { CtaSection } from "@/components/Home/Cta/Cta";
 import { ExperienceSection } from "@/components/Home/Experience/Experience";
+import { FooterSection } from "@/components/Home/Footer/Footer";
 import { HeroSection } from "@/components/Home/Hero/Hero";
 import { MethodsSection } from "@/components/Home/Methods/Methods";
 import { ProjectsSection } from "@/components/Home/Projects/Projects";
@@ -18,5 +19,6 @@ import Layout from "@/layouts/Layout.astro";
     <MethodsSection />
     <CtaSection />
     <ContactSection />
+    <FooterSection client:visible />
   </main>
 </Layout>
