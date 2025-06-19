@@ -12,13 +12,13 @@ export const CtaSection = () => {
 	return (
 		<section className="w-full h-fit flex justify-center items-center px-5">
 			<ContainerLayout className="flex flex-col gap-8 py-20 px-5 bg-foreground rounded-2xl">
-				<h2 className="font-light text-4xl text-center text-background uppercase tracking-tight">
+				<h2 className="font-light text-3xl md:text-4xl text-center text-background uppercase tracking-tight">
 					Vamos conversar?
 				</h2>
-				<div className="max-w-4xl w-full grid grid-cols-2 items-start gap-16 mx-auto">
+				<div className="max-w-4xl w-full grid grid-cols-1 md:grid-cols-2 items-start gap-16 mx-auto">
 					{/* TITLE */}
 					<div className="flex flex-col gap-3">
-						<p className="text-lg text-background/75">
+						<p className="text-lg text-center md:text-start text-background/75 text-balance md:text-pretty">
 							Estou aberto a novas oportunidades. Clique no botão e me mande uma
 							mensagem.
 						</p>
