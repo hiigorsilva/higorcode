@@ -57,12 +57,12 @@ export const ExperienceSection = () => {
 										</p>
 
 										{experience.techs.length > 0 && (
-											<>
+											<div className="flex flex-col gap-1">
 												<h4 className="text-lg tracking-tight uppercase text-foreground">
 													Tecnologias usadas
 												</h4>
 
-												<div className="flex flex-wrap items-center gap-2">
+												<div className="flex flex-wrap items-center gap-0.5">
 													{experience.techs.map((tech) => (
 														<div
 															key={tech.name}
@@ -79,7 +79,7 @@ export const ExperienceSection = () => {
 														</div>
 													))}
 												</div>
-											</>
+											</div>
 										)}
 									</div>
 								</li>

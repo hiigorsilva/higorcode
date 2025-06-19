@@ -32,7 +32,7 @@ export const ContactSection = () => {
 								<Button
 									key={contact.title}
 									variant="ghost"
-									className="w-fit h-fit justify-start text-start"
+									className="w-full h-fit justify-start text-start"
 									asChild
 								>
 									<a
