@@ -12,7 +12,7 @@ type ProjectItemProps = {
 export const ProjectItem = ({ project }: ProjectItemProps) => {
 	return (
 		<li className="group w-full flex flex-col gap-3">
-			<div className="relative w-full max-h-80 h-full rounded overflow-hidden">
+			<div className="relative w-full max-h-80 h-auto rounded overflow-hidden">
 				<img
 					className="group-hover:scale-110 transition w-full h-full object-cover"
 					src={project.cover}
@@ -20,7 +20,7 @@ export const ProjectItem = ({ project }: ProjectItemProps) => {
 				/>
 			</div>
 
-			<div className="flex justify-between items-center gap-4">
+			<div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-4">
 				<h3 className="font-medium text-lg text-foreground text-start tracking-tight uppercase">
 					{project.title}
 				</h3>
@@ -32,11 +32,11 @@ export const ProjectItem = ({ project }: ProjectItemProps) => {
 				{project.description}
 			</p>
 
-			<div className="flex justify-between items-center gap-3">
+			<div className="flex flex-col md:flex-row justify-between items-center gap-3">
 				{project.links.preview && (
 					<Button
 						variant="outline"
-						className="flex-1 text-muted-foreground rounded"
+						className="w-full flex-1 text-muted-foreground rounded"
 						asChild
 					>
 						<a
@@ -52,7 +52,7 @@ export const ProjectItem = ({ project }: ProjectItemProps) => {
 
 				<Button
 					variant="outline"
-					className="flex-1 text-muted-foreground rounded"
+					className="w-full flex-1 text-muted-foreground rounded"
 					asChild
 				>
 					<a
