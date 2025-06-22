@@ -1,5 +1,5 @@
 import { cn } from "@/lib/utils";
-import type { ComponentProps, ReactNode } from "react";
+import type { ComponentProps } from "react";
 
 type ContainerLayoutProps = ComponentProps<"div"> & {};
 
