@@ -7,7 +7,7 @@ export const projects = [
 		tag: "FSW FullStack",
 		description:
 			"Criação de um sistema de agendamento de barbearia para o cliente usando Next.js, TypeScript, Prisma, PostgreSQL.",
-		cover: "https://picsum.photos/seed/picsum/536/354",
+		cover: "/images/home-page/projects/cover-barbershop.webp",
 		links: {
 			repository: "https://github.com/hiigorsilva/barber-app",
 			preview: "https://barber-app-rust.vercel.app/",
@@ -19,7 +19,7 @@ export const projects = [
 		tag: "FSW FullStack",
 		description:
 			"Criação de gerenciador de finanças com IA usando Next.js, Typescript, Prisma, PostgreSQL e ChatGPT.",
-		cover: "https://picsum.photos/seed/picsum/536/354",
+		cover: "/images/home-page/projects/cover-finance-ai.webp",
 		links: {
 			repository: "https://github.com/hiigorsilva/finance-ai",
 			preview: "https://finance-ai-theta-rosy.vercel.app",
@@ -31,7 +31,7 @@ export const projects = [
 		tag: "NLW Connect Front-End",
 		description:
 			"Criação de um sistema de indicação com ranking de pontuação usando Next.js, Zod, TypeScript, Orval.",
-		cover: "https://picsum.photos/seed/picsum/536/354",
+		cover: "/images/home-page/projects/cover-devstage.webp",
 		links: {
 			repository: "https://github.com/hiigorsilva/connect-web",
 			preview: null,
@@ -43,7 +43,7 @@ export const projects = [
 		tag: "NLW Pocket FullStack",
 		description:
 			"Criação de um app de controle de metas pessoais usando React.js, Typescript, Node.js, API REST, Fastify, Docker.",
-		cover: "https://picsum.photos/seed/picsum/536/354",
+		cover: "/images/home-page/projects/cover-goals-control.webp",
 		links: {
 			repository: "https://github.com/hiigorsilva/app-inorbit-web",
 			preview: null,

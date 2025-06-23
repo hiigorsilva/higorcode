@@ -15,7 +15,7 @@ export const TechsSection = () => {
 					</h2>
 				</div>
 
-				<TechGrid data={techs} />
+				<TechGrid />
 			</ContainerLayout>
 		</section>
 	);
