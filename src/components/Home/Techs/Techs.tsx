@@ -1,6 +1,5 @@
 import { ContainerLayout } from "@/components/Globals/ContainerLayout";
 import { TechGrid } from "@/components/Home/Techs/TechGrid";
-import { techs } from "@/data/home/techs";
 import { DatabaseIcon } from "lucide-react";
 
 export const TechsSection = () => {
