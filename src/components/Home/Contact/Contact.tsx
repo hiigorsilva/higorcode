@@ -27,7 +27,7 @@ export const ContactSection = () => {
 
 					{/* CARD CONTACT */}
 					<Card className="w-full">
-						<CardContent className="flex flex-col gap-4">
+						<CardContent className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-2 gap-4">
 							{contacts.map((contact) => (
 								<Button
 									key={contact.title}
