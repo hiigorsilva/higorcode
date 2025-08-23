@@ -46,7 +46,7 @@ export const HeroSection = () => {
 			className="min-h-dvh w-full py-10 px-5 flex flex-col justify-center items-center"
 		>
 			<ContainerLayout className="flex justify-center items-center">
-				<div className="max-w-2xl w-full flex flex-col items-center gap-8">
+				<div className="max-w-xl w-full flex flex-col items-center gap-8">
 					{/* BADGE */}
 					<Badge className="font-light text-foreground uppercase tracking-widest border border-border rounded-full bg-zinc-50/10 backdrop-blur-sm">
 						Desenvolvedor Web Front-End
@@ -54,18 +54,16 @@ export const HeroSection = () => {
 
 					{/* HEADLINE */}
 					<div className="flex flex-col gap-3">
-						<h1 className="font-light text-3xl sm:text-4xl md:text-5xl text-center text-foreground text-balance md:text-pretty uppercase tracking-tight">
-							Me chamo Higor Silva e{" "}
-							<span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-300 to-orange-400">
-								Desenvolvo interfaces web
-							</span>
+						<h1 className="font-light text-3xl sm:text-4xl md:text-5xl text-center text-transparent bg-clip-text bg-gradient-to-r from-orange-300 to-orange-400 text-balance md:text-pretty uppercase tracking-tight">
+							Higor Silva Soares
 						</h1>
 						<p className="text-base md:text-xl text-center text-muted-foreground text-balance md:text-pretty">
-							Busco oportunidade como Dev Front-End, focado em{" "}
+							Desenvolvedor Front-End com mais de 2 anos de experiência prática
+							em{" "}
 							<strong className="font-medium text-foreground">
-								ReactJS, NextJS e TypeScript
-							</strong>{" "}
-							para colaborar em projetos desafiadores.
+								React, Next.js e TypeScript
+							</strong>
+							.
 						</p>
 					</div>
 
@@ -73,7 +71,7 @@ export const HeroSection = () => {
 					<div className="flex justify-center items-center gap-3">
 						<Button className="h-fit font-medium tracking-tight py-3" asChild>
 							<a
-								href="/docs/cv-higorcode.pdf"
+								href="/docs/cv-higorsilva.pdf"
 								target="_blank"
 								rel="noopener noreferrer"
 							>
