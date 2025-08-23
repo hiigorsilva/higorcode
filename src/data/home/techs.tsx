@@ -67,6 +67,10 @@ const tools = [
 		name: "Prisma ORM",
 	},
 	{
+		icon: "/icons/techs/drizzle.svg",
+		name: "Drizzle ORM",
+	},
+	{
 		icon: "/icons/techs/docker.svg",
 		name: "Docker",
 	},
