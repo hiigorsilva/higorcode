@@ -71,7 +71,7 @@ export const HeroSection = () => {
 					<div className="flex justify-center items-center gap-3">
 						<Button className="h-fit font-medium tracking-tight py-3" asChild>
 							<a
-								href="/docs/cv-higorsilva.pdf"
+								href="/docs/cv_web_developer.pdf"
 								target="_blank"
 								rel="noopener noreferrer"
 							>

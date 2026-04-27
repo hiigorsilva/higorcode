@@ -41,6 +41,6 @@ const { title, description, ogImage } = Astro.props;
 <title>{title}</title>
 
 <link rel="canonical" href={domainUrl} />
-<link rel="preload" href={`${domainUrl}/fonts/space-grotesk-medium.woff2`} as="font" type="font/woff2">
-<link rel="preload" href={`${domainUrl}/fonts/space-grotesk-regular.woff2`} as="font" type="font/woff2">
-<link rel="shortcut icon" type="image/svg+xml" href={`${domainUrl}/favicon.ico`}>
+<link rel="preload" href={`${domainUrl}/fonts/space-grotesk-medium.woff2`} as="font" type="font/woff2" crossorigin>
+<link rel="preload" href={`${domainUrl}/fonts/space-grotesk-regular.woff2`} as="font" type="font/woff2" crossorigin>
+<link rel="shortcut icon" type="image/x-icon" href={`${domainUrl}/favicon.ico`} crossorigin>
