@@ -44,6 +44,10 @@ const styles = [
 		name: "Tailwind CSS",
 	},
 	{
+		icon: "/icons/techs/antdesign.svg",
+		name: "Ant Design",
+	},
+	{
 		icon: "/icons/techs/sass.svg",
 		name: "SASS",
 	},

@@ -1,10 +1,22 @@
 export const experiences = [
 	{
+		title: "Desenvolvedor Web Frontend",
+		company: "Manto Sistemas",
+		period: "2025 - 2026",
+		description:
+			"Colaborei na portabilidade de sistema ERP corporativo de desktop para web, cobrindo 9 módulos: Pessoas, Empresa, Financeiro, Compras, Vendas, PCP, TMS, Segurança e Configurações. Modernizei e otimizei interfaces legadas, garantindo paridade funcional com o sistema anterior durante a migração.",
+		techs: [
+			{ name: "React.JS", icon: "/icons/techs/react.svg" },
+			{ name: "TypeScript", icon: "/icons/techs/typescript.svg" },
+			{ name: "JavaScript", icon: "/icons/techs/javascript.svg" },
+		],
+	},
+	{
 		title: "Desenvolvedor Web",
 		company: "Freelancer",
-		period: "2024 - Atual",
+		period: "2024 - 2025",
 		description:
-			"Entreguei Landing Pages com alto poder de conversão para infoprodutores com tempo de carregamento de até 1 segundo para melhor experiência do usuário",
+			"Entreguei mais de 10 landing pages para infoprodutores com tempo de carregamento abaixo de 1 segundo, priorizando performance, responsividade e conversão. Integrei ferramentas de marketing, realizei auditorias de performance e apliquei boas práticas de SEO e acessibilidade em todos os projetos entregues.",
 		techs: [
 			{ name: "TypeScript", icon: "/icons/techs/typescript.svg" },
 			{ name: "Astro.JS", icon: "/icons/techs/astro.svg" },
@@ -19,7 +31,7 @@ export const educations = [
 		company: "B7Web",
 		period: "2023 - Atual",
 		description:
-			"Aprendi e pratiquei desenvolvimento web com as tecnologias de Frontend e Backend como JavaScript, TypeScript, React, Next, Node.js, Express, PostgreSQL com Prisma, deploy, e outras.",
+			"Aprendi e pratiquei desenvolvimento web com as tecnologias de Frontend e Backend como JavaScript, TypeScript, React, Next, Node.js, Express, PostgreSQL com Prisma, deploy, e outras. Ainda mantenho estudos contínuos para me manter atualizado com as melhores práticas e novas tecnologias do mercado.",
 	},
 	{
 		title: "Bacharel em Administração",

@@ -1,4 +1,8 @@
-export const methods = [{ title: "Kanban" }, { title: "Scrum" }];
+export const methods = [
+	{ title: "Kanban" },
+	{ title: "Scrum" },
+	{ title: "JIRA" },
+];
 
 export const languages = [
 	{
@@ -7,6 +11,6 @@ export const languages = [
 	},
 	{
 		title: "Inglês Técnico",
-		level: "Básico | Iniciante",
+		level: "Leitura e Documentação",
 	},
 ];
